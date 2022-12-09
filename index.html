@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General User Unterface</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+        <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+       />
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form autocomplete="off">
+      <div>
+        <P>Type to search</P>
+        <input type="text" id="input_1" placeholder="Type a name here..." />
+      </div>
+      <ul class="list"></ul>
+      <div>
+        <br>
+        Email:<input type="text" id="input_2" placeholder="Email"/>
+        <button onclick="validate()" type="button"> Validity</button> 
+      </div>
+      <div>
+        DOB:<input type="date" id="input_3" placeholder="Dob"/>
+ 
+      </div>
+      <div>
+        <p>phone no:</p>
+        <input id="input_4" type="tel" name="phone" />
+        <br>
+        <button onclick="check()" type="button">Validity</button>
+
+      </div>
+      
+    </form>
+
+    <script src="brain.js"></script>
+  </body>
+</html>
